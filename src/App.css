@@ -1,0 +1,225 @@
+/* @tailwind base;
+@tailwind components;
+@tailwind utilities; */
+
+/* body {
+    font-family: Arial, sans-serif;
+    background-color: #c8cccc;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+  }
+  
+  h1 {
+    color: #333;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Container for the weather app */
+  /* .weather-container {
+    width: 100%;
+    max-width: 470px;
+    margin: 100px auto 0;
+    border-radius: 20px;
+    padding: 40px 35px;
+    text-align: center;
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(30px);
+    border: 2px solid rgba(255, 255, 255, 0.2);
+    transition: height 0.6s ease;
+  }
+  
+  .weather-container:hover {
+    box-shadow: 0 12px 24px rgba(0, 0, 0, 0.3); 
+  }
+  
+  /* Search form styles */
+  /* .search {
+    margin-bottom: 20px;
+  }
+  
+  .weatherForm {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .weatherForm input[type="text"] {
+    width: 70%;
+    padding: 10px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    margin-right: 10px;
+    font-size: 16px;
+  }
+  
+  .weatherForm button {
+    background-color: #00ffe1;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .weatherForm button:hover {
+    background-color: #004d40;
+  }
+  
+  .weatherForm img {
+    width: 20px;
+    height: 20px;
+  }
+  
+  /* Weather details styles */
+  /* .weather-info {
+    width: 100%;
+  max-width: 470px;
+  margin: 100px auto 0;
+  border-radius: 20px;
+  padding: 40px 35px;
+  text-align: center;
+  background: rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(30px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  transition: height 0.6s ease;
+  }
+  
+  .weather-info p {
+    margin: 10px 0;
+    font-size: 18px;
+  }
+  
+  .weather-info h2 {
+    margin-top: 0;
+  }
+  
+  .weather-info .temperature {
+    font-size: 36px;
+    font-weight: bold;
+  }
+    */
+
+    /* General Styles */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f0f2f5;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+.main {
+  text-align: center;
+  width: 100%;
+  max-width: 400px;
+  margin: auto;
+}
+
+h1 {
+  font-size: 2.5rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+/* Search Bar Styles */
+.search {
+  margin-bottom: 20px;
+}
+
+.weatherForm {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+
+.weatherForm input {
+  width: 70%;
+  padding: 10px;
+  font-size: 1rem;
+  border-radius: 20px;
+  border: 1px solid #ddd;
+  margin-right: 10px;
+  outline: none;
+}
+
+.weatherForm button {
+  background-color: #007bff;
+  border: none;
+  padding: 10px;
+  border-radius: 50%;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.weatherForm button img {
+  width: 20px;
+  height: 20px;
+  filter: invert(100%);
+}
+
+/* Weather Card Styles */
+.weather-info {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: left;
+}
+
+.weather-info h2 {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 15px;
+}
+
+.weather-info p {
+  font-size: 1.2rem;
+  color: #555;
+  margin: 5px 0;
+}
+
+/* Weather Icon */
+.weather-info .flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 10px;
+}
+
+.weather-info img {
+  width: 50px;
+  height: 50px;
+}
+
+/* Responsive Design */
+@media (max-width: 480px) {
+  .weatherForm input {
+    width: 60%;
+    padding: 8px;
+    font-size: 0.9rem;
+  }
+
+  .weather-info h2 {
+    font-size: 1.3rem;
+  }
+
+  .weather-info p {
+    font-size: 1rem;
+  }
+
+  .weather-info img {
+    width: 40px;
+    height: 40px;
+  }
+}
